@@ -1,0 +1,25 @@
+{
+    "name": "expo-build-notifier",
+    "description": "A simple notification for expo builds",
+    "version": "1.0.0",
+    "main": "./src/index.js",
+    "license": "MIT",
+    "homepage": "https://github.com/TomDowling/expo-build-notifier",
+    "repository": "https://github.com/TomDowling/expo-build-notifier.git",
+    "author": {
+        "name": "Tom Dowling",
+        "email": "tom@digital-space.io"
+    },
+    "keywords": [
+        "expo",
+        "react-native",
+        "alerts",
+        "discord",
+        "notifications",
+        "expo-discord",
+        "expo-notifications"
+    ],
+    "dependencies": {
+        "discord-webhook-node": "^1.1.8"
+    }
+}
