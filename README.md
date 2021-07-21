@@ -105,14 +105,14 @@ Use this to post a message to your chosen platform each time your Expo project i
     }
 }
 ```
-| Required | Parameter     | Value   | Default Value | Options                     |
-| :------: | ------------- | ------- | ------------- | --------------------------- |
-|  ✔️ Yes  | type          | string  |               | "discord", "slack"          |
-|  ✔️ Yes  | webhookURL    | string  |               |                             |
-|  ✔️ Yes  | webhookURL    | string  |               |                             |
-|   ❌ No   | usernameType  | strong  | "default"     | "default", "discordWebhook" |
-|   ❌ No   | hideVersion   | boolean | false         | true, false                 |
-|   ❌ No   | hideTimestamp | boolean | false         | true, false                 |
+| Required | Parameter     | Value   | Default Value | Options                        |
+| :------: | ------------- | ------- | ------------- | ------------------------------ |
+|  ✔️ Yes  | type          | string  |               | "discord", "slack", "telegram" |
+|  ✔️ Yes  | webhookURL    | string  |               |                                |
+|  ✔️ Yes  | webhookURL    | string  |               |                                |
+|   ❌ No   | usernameType  | strong  | "default"     | "default", "discordWebhook"    |
+|   ❌ No   | hideVersion   | boolean | false         | true, false                    |
+|   ❌ No   | hideTimestamp | boolean | false         | true, false                    |
 
 N.B. **usernameType** only works for Discord currently.
 
