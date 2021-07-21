@@ -14,12 +14,15 @@
         "expo",
         "react-native",
         "alerts",
-        "discord",
         "notifications",
+        "expo-notifications",
+        "discord",
         "expo-discord",
-        "expo-notifications"
+        "slack",
+        "expo-slack"
     ],
     "dependencies": {
-        "discord-webhook-node": "^1.1.8"
+        "discord-webhook-node": "^1.1.8",
+        "slack-notify": "^0.1.7"
     }
 }
