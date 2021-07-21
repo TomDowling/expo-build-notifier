@@ -3,7 +3,7 @@
 ![version](https://img.shields.io/npm/v/expo-build-notifier "Version")
 ![npm](https://img.shields.io/npm/dt/expo-build-notifier.svg "Total Downloads")
 
-Use this to post a message to your chosen platofmr each time your Expo project is published. Currently only Discord is supported.
+Use this to post a message to your chosen platform each time your Expo project is published. Currently only Discord is supported.
 
 - [Installation - Discord](#installation)
 - [Examples](#examples)
@@ -73,7 +73,8 @@ Use this to post a message to your chosen platofmr each time your Expo project i
 
 
 # Roadmap
-I plan to add Slack and maybe Teams functionality in the near future. The next big step will be to be making it notify a channel with an artifact URL to download the app.
+I plan to add Slack and maybe Teams functionality in the near future. 
+The aim for version 2 will be to add a build URL (.apk, .ipa) to the message instead of a link to the project page.
 
 
 
