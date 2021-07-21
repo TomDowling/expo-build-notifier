@@ -1,7 +1,7 @@
 {
     "name": "expo-build-notifier",
     "description": "A simple notification for expo builds",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "main": "./src/index.js",
     "license": "MIT",
     "homepage": "https://github.com/TomDowling/expo-build-notifier",
@@ -19,10 +19,13 @@
         "discord",
         "expo-discord",
         "slack",
-        "expo-slack"
+        "expo-slack",
+        "telegram",
+        "expo-telegram"
     ],
     "dependencies": {
         "discord-webhook-node": "^1.1.8",
-        "slack-notify": "^0.1.7"
+        "slack-notify": "^0.1.7",
+        "slimbot": "^5.1.0"
     }
 }
