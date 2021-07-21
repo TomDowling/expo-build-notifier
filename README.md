@@ -99,12 +99,3 @@ If you don't set the type, it will try and find the information from the URL. If
 
 # License
 [MIT](./LICENSE)
-
-
-
-
-
-
-
-SLACK NOTES
-https://api.slack.com/messaging/webhooks#posting_with_webhooks
