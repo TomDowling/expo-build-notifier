@@ -1,40 +1,24 @@
-module.exports = ({ url, iosManifest, config }) => {
-    //  Variables
-    const { Webhook, MessageBuilder } = require('discord-webhook-node');
-    const {
-        hideReleaseChannel,
-        hideVersion,
-        type,
-        usernameType,
-        webhookURL
-    } = config;
-    const {
-        iconUrl,
-        name,
-        primaryColor,
-        releaseChannel,
-        version
-    } = iosManifest;
-    const hook = new Webhook(webhookURL);
-    
-    //  Changing the User Details for the Message
-    if (usernameType === 'default' || usernameType === undefined) {
-        hook.setUsername(name);
-        hook.setAvatar(iconUrl);
-    }
-    
-    //  Set Message Details
-    const message = new MessageBuilder()
-    .setTitle(name)
-    .setURL(url)
-    .setColor(primaryColor)
-    .setThumbnail(iconUrl)
-    .setTimestamp();
-    
-    //  Optional Information
-    if (hideVersion === false || hideVersion === undefined ) message.addField('Version', version);
-    if (hideReleaseChannel === false || hideVersion === undefined ) message.addField('Release Channel', releaseChannel);
+const discord = require('./platforms/discord');
+const slack = require('./platforms/slack');
 
-    //  Send Message
-    hook.send(message);
+module.exports = ({ url, iosManifest, config }) => {
+
+    config.items.map((item) => {
+        let urlType = '';
+
+        // Check URL for platform
+        if (item.type === undefined) {
+            if ( item.webhookURL.includes('discord') ) urlType = 'discord'
+            if ( item.webhookURL.includes('slack') ) urlType = 'slack'
+        }
+
+        // Function for each platform
+        if (item.type === 'discord' || urlType === 'discord') {
+            discord.message(item, url, iosManifest);
+        } else if (item.type === 'slack' || urlType === 'slack') {
+            slack.message(item, url, iosManifest);
+        } else if (urlType.length < 1) {
+            console.error('Please provide the Webhook Type.')
+        }
+    })
 }
