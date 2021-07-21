@@ -19,10 +19,13 @@
         "discord",
         "expo-discord",
         "slack",
-        "expo-slack"
+        "expo-slack",
+        "telegram",
+        "expo-telegram"
     ],
     "dependencies": {
         "discord-webhook-node": "^1.1.8",
-        "slack-notify": "^0.1.7"
+        "slack-notify": "^0.1.7",
+        "slimbot": "^5.1.0"
     }
 }
