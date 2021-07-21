@@ -1,7 +1,7 @@
 {
     "name": "expo-build-notifier",
     "description": "A simple notification for expo builds",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "main": "./src/index.js",
     "license": "MIT",
     "homepage": "https://github.com/TomDowling/expo-build-notifier",
