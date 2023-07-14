@@ -1,4 +1,5 @@
-# Expo Build Notifier
+# Expo Build Notifier (Archive)
+This was for the old Expo build process, before EAS. So this project isn't maintained any more.
 
 ![version](https://img.shields.io/npm/v/expo-build-notifier "Version")
 ![npm](https://img.shields.io/npm/dt/expo-build-notifier.svg "Total Downloads")
